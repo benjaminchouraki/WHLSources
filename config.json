@@ -1,0 +1,17 @@
+{
+    "Settings":{
+        "DatabaseName": "maas-analytics",
+        "EnvironemntName": "INT"
+    },
+    "Datasources":[
+        {"Name":"AF_EVENTS","Keys":"hashkey", "Path":"/mnt/landing-files/AF_EVENTS/*/", "TargetPath":"/mnt/cleansed-files/AF_EVENTS/"},
+        {"Name":"PT_TH_OFFER","Keys":"", "Path":"/mnt/landing-files/PT_TH_OFFER/*/", "TargetPath":"/mnt/cleansed-files/PT_TH_OFFER/"},
+        {"Name":"MAP","Keys":"", "Path":"/mnt/landing-files/MAP/", "TargetPath":"/mnt/cleansed-files/MAP/"},
+        {"Name":"POI", "Keys":"LP_ID", "Path":"/mnt/landing-files/POI/*/", "TargetPath":"/mnt/cleansed-files/POI/"},
+        {"Name":"PARK_RT", "Keys":"RecordedAtTime, ParkingId", "Path":"/mnt/landing-files/PARK_RT/", "TargetPath":"/mnt/cleansed-files/PARK_RT/"},
+        {"Name":"BIKE_RT", "Keys":"RecordedAtTime, BikeStationId", "Path":"/mnt/landing-files/BIKE_RT/", "TargetPath":"/mnt/cleansed-files/BIKE_RT/[CUST]/"},
+        {"Name":"CARSH_RT", "Keys":"RecordedAtTime, CarSharingStationId", "Path":"/mnt/landing-files/CARSH_RT/", "TargetPath":"/mnt/cleansed-files/CARSH_RT/"},
+        {"Name":"ACTIVITY", "Keys":"hashkey", "Path":"/mnt/landing-files/ACTIVITY/", "TargetPath":"/mnt/cleansed-files/ACTIVITY/"},
+        {"Name":"TRAF_SPEED", "Keys":"hashkey", "Path":"/mnt/landing-files/TRAF_SPEED/*/", "TargetPath":"/mnt/cleansed-files/TRAF_SPEED/"}
+    ]
+}
